@@ -63,6 +63,13 @@ COMPONENT_SWITCHES = [
 ]
 
 
+DEFAULT_ENALBED_SWITCHES = [
+    KEY_COMPONENTID_SMOOTHING,
+    KEY_COMPONENTID_BLACKBORDER,
+    KEY_COMPONENTID_LEDDEVICE,
+    KEY_COMPONENTID_V4L
+]
+
 def _component_to_unique_id(server_id: str, component: str, instance_num: int) -> str:
     """Convert a component to a unique_id."""
     return get_hyperion_unique_id(
@@ -151,6 +158,7 @@ class HyperionComponentSwitch(SwitchEntity):
         self._attr_translation_key = _component_to_translation_key(component_name)
         self._instance_name = instance_name
         self._component_name = component_name
+        self._attr_entity_registry_enabled_default = component_name in DEFAULT_ENALBED_SWITCHES
         self._client = hyperion_client
         self._client_callbacks = {
             f"{KEY_COMPONENTS}-{KEY_UPDATE}": self._update_components
