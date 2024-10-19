@@ -125,6 +125,7 @@ class HyperionCamera(Camera):
         self._device_id = get_hyperion_device_id(server_id, instance_num)
         self._instance_name = instance_name
         self._client = hyperion_client
+        self._attr_translation_key = "live-view"
 
         self._image_cond = asyncio.Condition()
         self._image: bytes | None = None

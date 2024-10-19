@@ -58,30 +58,40 @@
     }
   },
   "entity": {
+    "camera": {
+      "live-view":{
+        "name":"Live Image"
+      }
+    },
+    "light":{
+      "static-light": {
+        "name":"Static Light"
+      }
+    },
     "switch": {
       "all": {
-        "name": "Component all"
+        "name": "Components"
       },
       "smoothing": {
-        "name": "Component smoothing"
+        "name": "Smoothing"
       },
       "blackbar_detection": {
-        "name": "Component blackbar detection"
+        "name": "BlackBar Detection"
       },
       "forwarder": {
-        "name": "Component forwarder"
+        "name": "Forwarder"
       },
       "boblight_server": {
-        "name": "Component boblight server"
+        "name": "Boblight Server"
       },
       "platform_capture": {
-        "name": "Component platform capture"
+        "name": "Platform Capture"
       },
       "led_device": {
-        "name": "Component LED device"
+        "name": "Output Device"
       },
       "usb_capture": {
-        "name": "Component USB capture"
+        "name": "USB capture"
       }
     },
     "sensor": {

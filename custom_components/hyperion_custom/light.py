@@ -137,6 +137,7 @@ class HyperionLight(LightEntity):
         self._attr_unique_id = self._compute_unique_id(server_id, instance_num)
         self._device_id = get_hyperion_device_id(server_id, instance_num)
         self._instance_name = instance_name
+        self._attr_translation_key = "static-light"
         self._options = options
         self._client = hyperion_client
 
