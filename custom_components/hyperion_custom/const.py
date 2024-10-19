@@ -10,11 +10,11 @@ CONF_ROOT_CLIENT = "ROOT_CLIENT"
 CONF_EFFECT_HIDE_LIST = "effect_hide_list"
 CONF_EFFECT_SHOW_LIST = "effect_show_list"
 
-DEFAULT_NAME = "Hyperion"
+DEFAULT_NAME = "Hyperion Custom"
 DEFAULT_ORIGIN = "Home Assistant"
 DEFAULT_PRIORITY = 128
 
-DOMAIN = "hyperion"
+DOMAIN = "hyperion_custom"
 
 HYPERION_MANUFACTURER_NAME = "Hyperion"
 HYPERION_MODEL_NAME = f"{HYPERION_MANUFACTURER_NAME}-NG"
