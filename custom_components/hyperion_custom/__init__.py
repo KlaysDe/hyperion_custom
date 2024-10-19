@@ -33,7 +33,8 @@ from .const import (
     SIGNAL_INSTANCE_REMOVE,
 )
 
-PLATFORMS = [Platform.CAMERA, Platform.LIGHT, Platform.SENSOR, Platform.SWITCH]
+#PLATFORMS = [Platform.CAMERA, Platform.LIGHT, Platform.SENSOR, Platform.SWITCH]
+PLATFORMS = [Platform.CAMERA, Platform.SENSOR, Platform.SWITCH]
 
 _LOGGER = logging.getLogger(__name__)
 
