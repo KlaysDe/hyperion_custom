@@ -8,11 +8,11 @@ from typing import Any
 from .hyperion_py import client
 from .hyperion_py.const import (
     KEY_COMPONENT,
-    #KEY_COMPONENTID_ALL,
+    KEY_COMPONENTID_ALL,
     KEY_COMPONENTID_BLACKBORDER,
-    #KEY_COMPONENTID_BOBLIGHTSERVER,
-    #KEY_COMPONENTID_FORWARDER,
-    #KEY_COMPONENTID_GRABBER,
+    KEY_COMPONENTID_BOBLIGHTSERVER,
+    KEY_COMPONENTID_FORWARDER,
+    KEY_COMPONENTID_GRABBER,
     KEY_COMPONENTID_LEDDEVICE,
     KEY_COMPONENTID_SMOOTHING,
     KEY_COMPONENTID_TO_NAME,
@@ -76,12 +76,12 @@ def _component_to_unique_id(server_id: str, component: str, instance_num: int) -
 
 def _component_to_translation_key(component: str) -> str:
     return {
-        #KEY_COMPONENTID_ALL: "all",
+        KEY_COMPONENTID_ALL: "all",
         KEY_COMPONENTID_SMOOTHING: "smoothing",
         KEY_COMPONENTID_BLACKBORDER: "blackbar_detection",
-        #KEY_COMPONENTID_FORWARDER: "forwarder",
-        #KEY_COMPONENTID_BOBLIGHTSERVER: "boblight_server",
-        #KEY_COMPONENTID_GRABBER: "platform_capture",
+        KEY_COMPONENTID_FORWARDER: "forwarder",
+        KEY_COMPONENTID_BOBLIGHTSERVER: "boblight_server",
+        KEY_COMPONENTID_GRABBER: "platform_capture",
         KEY_COMPONENTID_LEDDEVICE: "led_device",
         KEY_COMPONENTID_V4L: "usb_capture",
     }[component]
