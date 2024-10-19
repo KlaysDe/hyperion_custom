@@ -26,6 +26,7 @@ from homeassistant.components.camera import (
     async_get_still_stream,
 )
 from homeassistant.config_entries import ConfigEntry
+from homeassistant.const import EntityCategory
 from homeassistant.core import HomeAssistant, callback
 from homeassistant.helpers.device_registry import DeviceInfo
 from homeassistant.helpers.dispatcher import (
@@ -107,6 +108,7 @@ class HyperionCamera(Camera):
     """ComponentBinarySwitch switch class."""
 
     _attr_has_entity_name = True
+    _attr_entity_category = EntityCategory.CONFIG
     _attr_name = None
 
     def __init__(

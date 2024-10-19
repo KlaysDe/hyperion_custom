@@ -136,7 +136,7 @@ async def async_setup_entry(
 class HyperionComponentSwitch(SwitchEntity):
     """ComponentBinarySwitch switch class."""
 
-    _attr_entity_category = EntityCategory.CONFIG
+    #_attr_entity_category = EntityCategory.CONFIG
     _attr_should_poll = False
     _attr_has_entity_name = True
     # These component controls are for advanced users and are disabled by default.
